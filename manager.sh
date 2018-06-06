@@ -6,8 +6,8 @@ trap 'exec 2>&4 1>&3' 0 1 2 3
 exec 1>>gdriveSync.log 2>&1
 set -e
 
-REMOTE_SYNC_DIR=$1
-LOCAL_SYNC_DIR=~/Desktop
+LOCAL_SYNC_DIR=$1
+REMOTE_SYNC_DIR=$2
 SYNC_DIR_ID=""
 STARTTIME=$(date '+%d/%m/%Y %H:%M:%S');
 
