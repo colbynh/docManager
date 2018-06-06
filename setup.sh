@@ -11,6 +11,8 @@ brew update
 brew install fswatch
 brew install gdrive
 
+gdrive list
+
 chmod +x ./manager.sh
 
 /bin/bash ./manager.sh $LOCAL_DIR $REMOTE_DIR
