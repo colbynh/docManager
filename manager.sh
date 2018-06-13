@@ -25,7 +25,7 @@ sync() {
         SYNC_DIR_ID=$(gdrive mkdir $REMOTE_SYNC_DIR | cut -d ' ' -f 2)
     fi
 
-    gdrive sync upload --keep-remote $LOCAL_SYNC_DIR $SYNC_DIR_ID
+    gdrive sync upload $LOCAL_SYNC_DIR $SYNC_DIR_ID
     cleanBadRemoteFiles
     ENDTIME=$(date '+%d/%m/%Y %H:%M:%S');
     echo "================End of Sync $ENDTIME================"
