@@ -66,7 +66,7 @@ removeRemoteFile() {
 }
 
 cleanBadRemoteFiles() {
-    local rmlist=$(gdrive list --no-header | grep "~\$*" | awk -v col=1 '{print $col}')
+    local rmlist=$(gdrive list --no-header -m 100000 | grep "~\$*" | awk -v col=1 '{print $col}')
 
     if [[ ! -z rmlist ]]; then 
         echo "Cleaning up bad files..."
