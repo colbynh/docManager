@@ -7,7 +7,7 @@ sync() {
     exec 1>>/tmp/gdriveSync.log 2>&1
     set -e
 
-    LOCAL_SYNC_DIR="$HOME/docManager"
+    LOCAL_SYNC_DIR="$HOME/Desktop"
     REMOTE_SYNC_DIR="vicSync"
     SYNC_DIR_ID=""
     STARTTIME=$(date '+%d/%m/%Y %H:%M:%S');
